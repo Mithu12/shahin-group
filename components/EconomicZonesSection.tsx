@@ -61,7 +61,7 @@ export const EconomicZonesSection: React.FC = () => {
             </div>
 
             {/* Section Header */}
-            <div className="container mx-auto px-6 relative z-10 mb-12 md:mb-16">
+            <div className="container max-w-7xl mx-auto px-6 relative z-10 mb-12 md:mb-16">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}

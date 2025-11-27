@@ -7,7 +7,7 @@ import { Facebook, Twitter, Instagram, Linkedin, ArrowRight } from 'lucide-react
 export function Footer() {
     return (
         <footer id="contact" className="bg-background-dark text-white pt-20 pb-10 border-t border-white/10">
-            <div className="container mx-auto px-6">
+            <div className="container max-w-7xl mx-auto px-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                     {/* Brand Column */}
                     <div>

@@ -48,7 +48,7 @@ export function Portfolio() {
             {/* Background Shards */}
             <ShardShape className="opacity-30" />
 
-            <div className="container mx-auto px-6 relative z-10">
+            <div className="container max-w-7xl mx-auto px-6 relative z-10">
                 <div className="flex flex-col md:flex-row justify-between items-end mb-16 md:mb-24">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}

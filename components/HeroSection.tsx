@@ -33,7 +33,7 @@ export function HeroSection() {
             </div>
 
             {/* Content */}
-            <div className="relative z-20 container mx-auto px-6 text-center text-white">
+            <div className="relative z-20 container max-w-7xl mx-auto px-6 text-center text-white">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}

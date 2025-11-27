@@ -29,7 +29,7 @@ export function Header() {
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-background/90 backdrop-blur-md py-4 shadow-sm' : 'bg-transparent py-6'
                 }`}
         >
-            <div className="container mx-auto px-6 flex justify-between items-center">
+            <div className="container max-w-7xl mx-auto px-6 flex justify-between items-center">
                 <Link href="/" className="z-50">
                     <h1 className={`font-display text-2xl font-bold tracking-widest transition-colors duration-300 ${isScrolled ? 'text-foreground' : 'text-white'
                         }`}>
@@ -50,8 +50,8 @@ export function Header() {
                         </Link>
                     ))}
                     <button className={`px-6 py-2 text-sm uppercase tracking-wider border transition-all duration-300 ${isScrolled
-                            ? 'border-primary text-primary hover:bg-primary hover:text-white'
-                            : 'border-white text-white hover:bg-white hover:text-black'
+                        ? 'border-primary text-primary hover:bg-primary hover:text-white'
+                        : 'border-white text-white hover:bg-white hover:text-black'
                         }`}>
                         Inquire
                     </button>

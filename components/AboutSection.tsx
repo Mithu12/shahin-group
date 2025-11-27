@@ -23,7 +23,7 @@ export function AboutSection() {
                 }} />
             </div>
 
-            <div className="container mx-auto px-6 relative z-10">
+            <div className="container max-w-7xl mx-auto px-6 relative z-10">
                 {/* Section Header */}
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
