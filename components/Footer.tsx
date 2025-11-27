@@ -1,29 +1,91 @@
+'use client';
+
 import React from 'react';
+import Link from 'next/link';
+import { Facebook, Twitter, Instagram, Linkedin, ArrowRight } from 'lucide-react';
 
 export function Footer() {
     return (
-        <footer className="border-t border-gray-200 dark:border-gray-800 py-8 bg-background-light dark:bg-background-dark">
-            <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-subtext-light dark:text-subtext-dark">
-                <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8 mb-6 md:mb-0">
-                    <nav className="flex gap-6 font-body">
-                        <a className="hover:text-text-light dark:hover:text-text-dark transition-colors" href="#">About</a>
-                        <a className="hover:text-text-light dark:hover:text-text-dark transition-colors" href="#">Projects</a>
-                        <a className="hover:text-text-light dark:hover:text-text-dark transition-colors" href="#">News</a>
-                        <a className="hover:text-text-light dark:hover:text-text-dark transition-colors" href="#">Contact</a>
-                    </nav>
-                    <div className="flex gap-4">
-                        <a className="hover:text-text-light dark:hover:text-text-dark transition-colors" href="#">
-                            <svg fill="currentColor" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"></path></svg>
-                        </a>
-                        <a className="hover:text-text-light dark:hover:text-text-dark transition-colors" href="#">
-                            <svg fill="currentColor" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
-                        </a>
-                        <a className="hover:text-text-light dark:hover:text-text-dark transition-colors" href="#">
-                            <svg fill="currentColor" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8A3.6 3.6 0 0 0 20 16.4V7.6A3.6 3.6 0 0 0 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path></svg>
-                        </a>
+        <footer id="contact" className="bg-background-dark text-white pt-20 pb-10 border-t border-white/10">
+            <div className="container mx-auto px-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                    {/* Brand Column */}
+                    <div>
+                        <h2 className="font-display text-2xl font-bold tracking-widest mb-6">SHAHIN GROUP</h2>
+                        <p className="font-body text-gray-400 leading-relaxed mb-6">
+                            Crafting the future through a legacy of excellence, innovation, and sustainable development.
+                        </p>
+                        <div className="flex gap-4">
+                            <Link href="#" className="p-2 bg-white/5 rounded-full hover:bg-primary hover:text-white transition-colors">
+                                <Facebook className="w-5 h-5" />
+                            </Link>
+                            <Link href="#" className="p-2 bg-white/5 rounded-full hover:bg-primary hover:text-white transition-colors">
+                                <Twitter className="w-5 h-5" />
+                            </Link>
+                            <Link href="#" className="p-2 bg-white/5 rounded-full hover:bg-primary hover:text-white transition-colors">
+                                <Instagram className="w-5 h-5" />
+                            </Link>
+                            <Link href="#" className="p-2 bg-white/5 rounded-full hover:bg-primary hover:text-white transition-colors">
+                                <Linkedin className="w-5 h-5" />
+                            </Link>
+                        </div>
+                    </div>
+
+                    {/* Quick Links */}
+                    <div>
+                        <h3 className="font-display text-lg font-bold mb-6">Quick Links</h3>
+                        <ul className="space-y-4 font-body text-gray-400">
+                            <li><Link href="#" className="hover:text-primary transition-colors">About Us</Link></li>
+                            <li><Link href="#" className="hover:text-primary transition-colors">Our Portfolio</Link></li>
+                            <li><Link href="#" className="hover:text-primary transition-colors">Services</Link></li>
+                            <li><Link href="#" className="hover:text-primary transition-colors">News & Insights</Link></li>
+                            <li><Link href="#" className="hover:text-primary transition-colors">Careers</Link></li>
+                        </ul>
+                    </div>
+
+                    {/* Contact Info */}
+                    <div>
+                        <h3 className="font-display text-lg font-bold mb-6">Contact</h3>
+                        <ul className="space-y-4 font-body text-gray-400">
+                            <li>
+                                <span className="block text-white mb-1">Headquarters</span>
+                                123 Business Bay, Dubai, UAE
+                            </li>
+                            <li>
+                                <span className="block text-white mb-1">Phone</span>
+                                +971 4 123 4567
+                            </li>
+                            <li>
+                                <span className="block text-white mb-1">Email</span>
+                                info@shahingroup.com
+                            </li>
+                        </ul>
+                    </div>
+
+                    {/* Newsletter */}
+                    <div>
+                        <h3 className="font-display text-lg font-bold mb-6">Newsletter</h3>
+                        <p className="font-body text-gray-400 mb-4">Subscribe to receive updates on our latest projects.</p>
+                        <form className="flex flex-col gap-4">
+                            <input
+                                type="email"
+                                placeholder="Your Email Address"
+                                className="bg-white/5 border border-white/10 p-3 rounded-none focus:outline-none focus:border-primary text-white placeholder-gray-500"
+                            />
+                            <button className="bg-primary text-white py-3 px-6 uppercase tracking-wider text-sm hover:bg-white hover:text-black transition-colors duration-300 flex items-center justify-center gap-2">
+                                Subscribe <ArrowRight className="w-4 h-4" />
+                            </button>
+                        </form>
                     </div>
                 </div>
-                <p className="font-body">© 2024 Shahin Group. All Rights Reserved.</p>
+
+                <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+                    <p>© 2024 Shahin Group. All Rights Reserved.</p>
+                    <div className="flex gap-6 mt-4 md:mt-0">
+                        <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
+                        <Link href="#" className="hover:text-white transition-colors">Terms of Service</Link>
+                    </div>
+                </div>
             </div>
         </footer>
     );

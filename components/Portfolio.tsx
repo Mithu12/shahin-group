@@ -1,63 +1,124 @@
+'use client';
+
 import React from 'react';
+import Image from 'next/image';
+import { motion } from 'framer-motion';
+import { ArrowUpRight } from 'lucide-react';
+import { ShardShape, AngularDividerTop } from './DesignElements';
+
+const projects = [
+    {
+        id: 1,
+        title: "The Grand Marina",
+        category: "Luxury Residential",
+        image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80",
+        description: "A waterfront masterpiece redefining luxury living."
+    },
+    {
+        id: 2,
+        title: "Shahin Tower",
+        category: "Commercial HQ",
+        image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&q=80",
+        description: "The new icon of the city's financial district."
+    },
+    {
+        id: 3,
+        title: "Eco-City One",
+        category: "Sustainable Urban Planning",
+        image: "https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?auto=format&fit=crop&q=80",
+        description: "A self-sustaining community for the future."
+    },
+    {
+        id: 4,
+        title: "Global Media Center",
+        category: "Media & Tech",
+        image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80",
+        description: "State-of-the-art broadcasting and digital hub."
+    }
+];
 
 export function Portfolio() {
     return (
-        <section className="py-16 md:py-24 bg-background-light dark:bg-background-dark">
-            <div className="container mx-auto px-6">
-                <h3 className="font-display text-4xl md:text-5xl text-center mb-12 text-text-light dark:text-text-dark">Our Portfolio of Subsidiaries</h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    {/* Card 1 */}
-                    <div className="card-gradient-1 text-white p-8 rounded-lg flex flex-col justify-between min-h-[400px] relative overflow-hidden group">
-                        <img alt="Architectural blueprint pattern" className="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:opacity-20 transition-opacity duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8dwKRBRRF-ecdJnARZDsX0SG4o1GAEzx5XS9pDklz9YuEFs41IN2D06-I8MADURmOyLNO0eUp_a3dzn-1boTo_TCq3BkJ2x5WgNdKr3A88MJeFRCSv6A2x1KKIzOUJsK6SyYfRnx96XQPCi68h8Oy0DrIR3_3KMhJAg5qMQSAh2lfzlKtdBlJeGvwH3xceFj_rKrG1GGiycWoQUcDLA3xLbKueBYINUBlI1Lwv5NFACIiooWRq53UsLlsLk8YqGQNYxs-J6I81KrH" />
-                        <div className="relative z-10">
-                            <div className="flex justify-between items-center border-b border-white/20 pb-2 mb-4">
-                                <span className="font-body text-sm">Architectural</span>
-                                <span className="material-icons-outlined">arrow_forward</span>
+        <section id="projects" className="relative py-24 md:py-40 bg-background-light dark:bg-background-dark overflow-hidden">
+            {/* Angular Divider Top */}
+            <div className="absolute top-0 left-0 w-full text-background-light dark:text-background-dark z-20 -mt-1">
+                <AngularDividerTop />
+            </div>
+
+            {/* Background Shards */}
+            <ShardShape className="opacity-30" />
+
+            <div className="container mx-auto px-6 relative z-10">
+                <div className="flex flex-col md:flex-row justify-between items-end mb-16 md:mb-24">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <h4 className="text-primary text-sm uppercase tracking-[0.2em] font-bold mb-4">
+                            Our Business
+                        </h4>
+                        <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground">
+                            Featured <span className="text-primary">Projects</span>
+                        </h2>
+                    </motion.div>
+
+                    <motion.button
+                        initial={{ opacity: 0, x: 20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6, delay: 0.2 }}
+                        className="hidden md:flex items-center gap-2 text-foreground hover:text-primary transition-colors uppercase tracking-widest text-sm font-bold group"
+                    >
+                        View All Projects
+                        <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                    </motion.button>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                    {projects.map((project, index) => (
+                        <motion.div
+                            key={project.id}
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.6, delay: index * 0.1 }}
+                            className="group relative h-[400px] md:h-[500px] overflow-hidden cursor-pointer"
+                        >
+                            <Image
+                                src={project.image}
+                                alt={project.title}
+                                fill
+                                className="object-cover transition-transform duration-700 group-hover:scale-110"
+                            />
+                            {/* Overlay */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 transition-opacity duration-300" />
+
+                            {/* Content */}
+                            <div className="absolute bottom-0 left-0 w-full p-8 md:p-12 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                                <p className="text-primary text-xs uppercase tracking-widest mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                                    {project.category}
+                                </p>
+                                <h3 className="font-display text-3xl md:text-4xl font-bold text-white mb-2">
+                                    {project.title}
+                                </h3>
+                                <p className="text-gray-300 font-body text-sm md:text-base max-w-md opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200">
+                                    {project.description}
+                                </p>
                             </div>
-                            <h4 className="font-display text-3xl">Shahin Architecture</h4>
-                            <p className="font-body text-sm mt-1">Avant-Garde Design &amp; Master Planning</p>
-                        </div>
-                        <p className="relative z-10 font-body text-sm text-white/80">Award-winning architectural solutions for luxury residences and commercial landmarks.</p>
-                    </div>
-                    {/* Card 2 */}
-                    <div className="card-gradient-2 text-white p-8 rounded-lg flex flex-col justify-between min-h-[400px] relative overflow-hidden group">
-                        <img alt="Cityscape silhouette pattern" className="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:opacity-20 transition-opacity duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDh7CJF1lyhsNm98CNkdmV0i7Vt3EesvsBFauDWerdH2mJxOM_R9ZGYvelaHF6Do-FJPEnF_pT5MVA2JWppu0ubXUintjMyNRguJY6Vy9OglNwHqw1Oi0vp0HyY7DULJDkksnuCMcqkp9hloop9z71ocDexAGZJsi_Zdmn6RNYbXMxVPkbjKC4jc1_1ecrhxQVCiIxcDspwD95YjhKr5NHYjMIvNbAihsT6sljVGunpaVcRujp0lRgaK8Vixh4Jv54MEmfOCCbbczNG" />
-                        <div className="relative z-10">
-                            <div className="flex justify-between items-center border-b border-white/20 pb-2 mb-4">
-                                <span className="font-body text-sm">Development</span>
-                                <span className="material-icons-outlined">arrow_forward</span>
-                            </div>
-                            <h4 className="font-display text-3xl">Shahin Development</h4>
-                            <p className="font-body text-sm mt-1">High-End Real Estate Investments</p>
-                        </div>
-                        <p className="relative z-10 font-body text-sm text-white/80">Crafting premium living and commercial spaces in prime locations.</p>
-                    </div>
-                    {/* Card 3 */}
-                    <div className="card-gradient-3 text-white p-8 rounded-lg flex flex-col justify-between min-h-[400px] relative overflow-hidden group">
-                        <img alt="Structural engineering detail pattern" className="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:opacity-20 transition-opacity duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvxSGJTXddHdeHHVimEUG46HvNjOpEVaZVmP6Yrw8XeDgdwOkvdGhtL6avyFiK6s5V05PM7AmLOKqGKwyx2IhDnFfiy_tToXs5gBqZ0uYmCKJZaF3fRiV0iRnWzthNYvv1v6cHj-FneAt5jfZc22TEUynJ78saVriIsIu6BN7jl-6P_xewZb56426Xna-IxbFoexNKVqsxw3g7FgUD9KKYFsHJpZVCPFl1wCN-f2ca54pMBtqsetdDK5vak7LtevQUPBotPQE7c683" />
-                        <div className="relative z-10">
-                            <div className="flex justify-between items-center border-b border-white/20 pb-2 mb-4">
-                                <span className="font-body text-sm">Construction</span>
-                                <span className="material-icons-outlined">arrow_forward</span>
-                            </div>
-                            <h4 className="font-display text-3xl">Shahin Construction</h4>
-                            <p className="font-body text-sm mt-1">Precision Engineering &amp; Build</p>
-                        </div>
-                        <p className="relative z-10 font-body text-sm text-white/80">Delivering excellence in construction with state-of-the-art techniques.</p>
-                    </div>
-                    {/* Card 4 */}
-                    <div className="card-gradient-4 text-white p-8 rounded-lg flex flex-col justify-between min-h-[400px] relative overflow-hidden group">
-                        <img alt="Digital media camera lens pattern" className="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:opacity-20 transition-opacity duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBY7welrf_52jGG-UwRjR6SDV36qWtPDETQeDgwx51FGa-QgfOB2fUsemD9V5YwDAC_dW6-Td33q61EkcXY4kMt37Bv5uy59Sz-KCM8FkfWqFaBVrLuFeRpUawDT5sTV4Zbt-tDL5_wHaEyJvffDQDmaT8vQKkick_SXjmQa6G-7PrYdJHB8feNcufXcBpFRKpSkzex0sV_RWwH-nfAxsM49mz-pRH7y-5qV8H9lP73Ff4MRIrw5dI0-TVP9xDt2cU_3lRJ8HdIFV5v" />
-                        <div className="relative z-10">
-                            <div className="flex justify-between items-center border-b border-white/20 pb-2 mb-4">
-                                <span className="font-body text-sm">Media</span>
-                                <span className="material-icons-outlined">arrow_forward</span>
-                            </div>
-                            <h4 className="font-display text-3xl">Shahin Media</h4>
-                            <p className="font-body text-sm mt-1">Global Content &amp; Digital Innovation</p>
-                        </div>
-                        <p className="relative z-10 font-body text-sm text-white/80">Producing impactful media and digital experiences across platforms.</p>
-                    </div>
+
+                            {/* Hover Border Effect */}
+                            <div className="absolute inset-0 border-2 border-primary/0 group-hover:border-primary/50 transition-colors duration-500 m-4" />
+                        </motion.div>
+                    ))}
+                </div>
+
+                <div className="mt-12 text-center md:hidden">
+                    <button className="inline-flex items-center gap-2 text-foreground hover:text-primary transition-colors uppercase tracking-widest text-sm font-bold">
+                        View All Projects
+                        <ArrowUpRight className="w-5 h-5" />
+                    </button>
                 </div>
             </div>
         </section>
