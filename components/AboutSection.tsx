@@ -191,45 +191,7 @@ export function AboutSection() {
                     </motion.div>
                 </div>
 
-                {/* Stats Section */}
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8 }}
-                    className="grid grid-cols-2 md:grid-cols-4 gap-8"
-                >
-                    {stats.map((stat, index) => {
-                        const Icon = stat.icon;
-                        return (
-                            <motion.div
-                                key={stat.label}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ duration: 0.5, delay: index * 0.1 }}
-                                whileHover={{ y: -5 }}
-                                className="group relative text-center p-6 bg-white dark:bg-card rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 border border-border/50"
-                            >
-                                {/* Decorative Corner Frames */}
-                                <div className="absolute top-2 left-2 w-10 h-10 border-l-3 border-t-3 border-primary/0 group-hover:border-primary transition-colors duration-500" />
-                                <div className="absolute bottom-2 right-2 w-10 h-10 border-r-3 border-b-3 border-primary/0 group-hover:border-primary transition-colors duration-500" />
 
-                                <div className="flex justify-center mb-4">
-                                    <div className="p-3 bg-primary/10 rounded-full">
-                                        <Icon className="w-8 h-8 text-primary" />
-                                    </div>
-                                </div>
-                                <h3 className="font-display text-4xl md:text-5xl font-bold text-primary mb-2">
-                                    {stat.value}
-                                </h3>
-                                <p className="text-xs uppercase tracking-widest text-muted-foreground font-semibold">
-                                    {stat.label}
-                                </p>
-                            </motion.div>
-                        );
-                    })}
-                </motion.div>
             </div>
         </section>
     );
