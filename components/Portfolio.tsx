@@ -86,6 +86,10 @@ export function Portfolio() {
                             transition={{ duration: 0.6, delay: index * 0.1 }}
                             className="group relative h-[400px] md:h-[500px] overflow-hidden cursor-pointer"
                         >
+                            {/* Decorative Corner Frames */}
+                            <div className="absolute top-4 left-4 w-16 h-16 border-l-4 border-t-4 border-primary/0 group-hover:border-primary z-30 transition-colors duration-500" />
+                            <div className="absolute bottom-4 right-4 w-16 h-16 border-r-4 border-b-4 border-primary/0 group-hover:border-primary z-30 transition-colors duration-500" />
+
                             <Image
                                 src={project.image}
                                 alt={project.title}

@@ -60,8 +60,12 @@ export function ServicesSection() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: index * 0.1 }}
-                            className="group p-8 border border-border hover:border-primary/50 bg-card transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
+                            className="group relative p-8 border border-border hover:border-primary/50 bg-card transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
                         >
+                            {/* Decorative Corner Frames */}
+                            <div className="absolute top-2 left-2 w-12 h-12 border-l-3 border-t-3 border-primary/0 group-hover:border-primary transition-colors duration-500" />
+                            <div className="absolute bottom-2 right-2 w-12 h-12 border-r-3 border-b-3 border-primary/0 group-hover:border-primary transition-colors duration-500" />
+
                             <div className="w-14 h-14 bg-secondary rounded-none flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-300">
                                 <service.icon className="w-7 h-7 text-foreground group-hover:text-white transition-colors duration-300" />
                             </div>

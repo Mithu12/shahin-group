@@ -8,8 +8,17 @@ import { AngularDividerBottom } from './DesignElements';
 export function HeroSection() {
     return (
         <section className="relative h-screen w-full overflow-hidden flex items-center justify-center bg-background-dark">
-            {/* Video Background */}
+            {/* Background Image Layer (Unsplash) */}
             <div className="absolute inset-0 z-0">
+                <img
+                    src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop"
+                    alt="Modern luxury architecture"
+                    className="w-full h-full object-cover opacity-50"
+                />
+            </div>
+
+            {/* Video Background Layer */}
+            <div className="absolute inset-0 z-10">
                 <video
                     autoPlay
                     loop
@@ -24,7 +33,7 @@ export function HeroSection() {
             </div>
 
             {/* Content */}
-            <div className="relative z-10 container mx-auto px-6 text-center text-white">
+            <div className="relative z-20 container mx-auto px-6 text-center text-white">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -70,7 +79,7 @@ export function HeroSection() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1.5, duration: 1 }}
-                className="absolute bottom-20 left-1/2 transform -translate-x-1/2 z-10"
+                className="absolute bottom-20 left-1/2 transform -translate-x-1/2 z-20"
             >
                 <div className="flex flex-col items-center animate-bounce">
                     <span className="text-[10px] uppercase tracking-[0.2em] text-white/70 mb-2">Scroll Down</span>
