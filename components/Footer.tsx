@@ -88,11 +88,11 @@ export function Footer() {
                         <ul className="space-y-6 font-body text-gray-400">
                             <li>
                                 <span className="block text-xs uppercase tracking-wider text-brand-gold mb-2">Headquarters</span>
-                                <span className="text-white">123 Business Bay, Dubai, UAE</span>
+                                <span className="text-white">House 12, Road 27, Gulshan-1, Dhaka 1212, Bangladesh</span>
                             </li>
                             <li>
                                 <span className="block text-xs uppercase tracking-wider text-brand-gold mb-2">Phone</span>
-                                <span className="text-white hover:text-brand-gold transition-colors cursor-pointer">+971 4 123 4567</span>
+                                <span className="text-white hover:text-brand-gold transition-colors cursor-pointer">+880 1712226456</span>
                             </li>
                             <li>
                                 <span className="block text-xs uppercase tracking-wider text-brand-gold mb-2">Email</span>
