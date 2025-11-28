@@ -33,11 +33,11 @@ const subsidiaries = [
     },
     {
         id: 4,
-        category: "Media",
-        title: "Shahin Media",
-        subtitle: "Global Content & Digital Innovation",
-        description: "Producing impactful media and digital experiences across platforms.",
-        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBY7welrf_52jGG-UwRjR6SDV36qWtPDETQeDgwx51FGa-QgfOB2fUsemD9V5YwDAC_dW6-Td33q61EkcXY4kMt37Bv5uy59Sz-KCM8FkfWqFaBVrLuFeRpUawDT5sTV4Zbt-tDL5_wHaEyJvffDQDmaT8vQKkick_SXjmQa6G-7PrYdJHB8feNcufXcBpFRKpSkzex0sV_RWwH-nfAxsM49mz-pRH7y-5qV8H9lP73Ff4MRIrw5dI0-TVP9xDt2cU_3lRJ8HdIFV5v",
+        category: "Real Estate",
+        title: "Shahin Signature Ltd",
+        subtitle: "Real Estate Listing",
+        description: "Premium property listings and real estate marketing solutions for discerning clients.",
+        image: "/images/subsidiaries/shahin-signature.png",
     }
 ];
 

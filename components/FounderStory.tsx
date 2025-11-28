@@ -65,7 +65,7 @@ export function FounderStory() {
                         </div>
 
                         <div className="pt-4">
-                            <div className="font-display text-2xl text-white">Shahin Alam</div>
+                            <div className="font-display text-2xl text-white">Shahin Akhter Babu</div>
                             <div className="text-brand-gold text-sm tracking-widest uppercase mt-1">Founder & CEO</div>
                         </div>
                     </motion.div>
