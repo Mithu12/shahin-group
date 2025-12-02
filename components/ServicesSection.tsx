@@ -70,9 +70,9 @@ const cardVariants: Variants = {
 
 export function ServicesSection() {
     return (
-        <section id="expertise" className="relative pb-24 pt-10 md:pb-40 md:pt-10 bg-background-light dark:bg-background-dark overflow-hidden">
+        <section id="expertise" className="relative pb-24 pt-10 md:pb-40 md:pt-10 bg-white overflow-hidden">
             {/* Angular Divider Top - Inverted for variety if needed, or just standard */}
-            <div className="absolute top-0 left-0 w-full text-background-light dark:text-background-dark z-20 -mt-1 transform rotate-180">
+            <div className="absolute top-0 left-0 w-full text-background z-20 -mt-1 transform rotate-180">
                 <AngularDividerTop />
             </div>
 

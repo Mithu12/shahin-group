@@ -23,7 +23,7 @@ export const AngularDividerTop = ({ className = "" }: { className?: string }) =>
             {/* Layer 1: Subtle background depth */}
             <motion.path
                 d="M1200 0L0 0 598.97 114.72 1200 0z"
-                fill="currentColor"
+                fill="#27272a"
                 initial={{ opacity: 0, x: -100, y: 20 }}
                 whileInView={{ opacity: 0.1, x: 0, y: 0 }}
                 viewport={{ once: true }}
@@ -32,8 +32,8 @@ export const AngularDividerTop = ({ className = "" }: { className?: string }) =>
 
             {/* Layer 2: Mid-tone sharp angle */}
             <motion.path
-                d="M1200 0L0 0 892.25 114.72 1200 0z"
-                fill="currentColor"
+                d="M1200 0L0 0 892.25 120.72 1200 0z"
+                fill="#27272a"
                 initial={{ opacity: 0, x: 150, y: 30 }}
                 whileInView={{ opacity: 0.3, x: 0, y: 0 }}
                 viewport={{ once: true }}
@@ -43,7 +43,7 @@ export const AngularDividerTop = ({ className = "" }: { className?: string }) =>
             {/* Layer 3: Main cut */}
             <motion.path
                 d="M1200 0L0 0 0 46.29 1200 120z"
-                fill="currentColor"
+                fill="#27272a"
                 initial={{ opacity: 0, x: -150, y: 40 }}
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
                 viewport={{ once: true }}
@@ -59,7 +59,7 @@ export const AngularDividerBottom = ({ className = "" }: { className?: string })
             {/* Layer 1: Background depth */}
             <motion.path
                 d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z"
-                fill="currentColor"
+                fill="#27272a"
                 initial={{ opacity: 0, x: -100, y: 20 }}
                 whileInView={{ opacity: 0.1, x: 0, y: 0 }}
                 viewport={{ once: true }}
@@ -69,7 +69,7 @@ export const AngularDividerBottom = ({ className = "" }: { className?: string })
             {/* Layer 2: Sharp geometric accent */}
             <motion.path
                 d="M0,0 L1200,120 L0,120 Z"
-                fill="currentColor"
+                fill="#27272a"
                 initial={{ opacity: 0, x: -200, y: 40 }}
                 whileInView={{ opacity: 0.3, x: 0, y: 0 }}
                 viewport={{ once: true }}
@@ -79,7 +79,7 @@ export const AngularDividerBottom = ({ className = "" }: { className?: string })
             {/* Layer 3: Main structure */}
             <motion.path
                 d="M1200,0 L1200,120 L0,120 L600,60 Z"
-                fill="currentColor"
+                fill="#27272a"
                 initial={{ opacity: 0, x: 200, y: 60 }}
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
                 viewport={{ once: true }}

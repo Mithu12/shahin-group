@@ -39,9 +39,9 @@ const projects = [
 
 export function Portfolio() {
     return (
-        <section id="projects" className="relative py-24 md:py-40 bg-background-light dark:bg-background-dark overflow-hidden">
+        <section id="projects" className="relative py-24 md:py-40 bg-white overflow-hidden">
             {/* Angular Divider Top */}
-            <div className="absolute top-0 left-0 w-full text-background-light dark:text-background-dark z-20 -mt-1">
+            <div className="absolute top-0 left-0 w-full text-background z-20 -mt-1">
                 <AngularDividerTop />
             </div>
 
@@ -90,7 +90,7 @@ export function Portfolio() {
                 <div
                     className="absolute inset-0"
                     style={{
-                        backgroundImage: `linear-gradient(rgba(197, 160, 89, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(197, 160, 89, 0.1) 1px, transparent 1px)`,
+                        backgroundImage: `linear-gradient(rgba(161, 161, 170, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(161, 161, 170, 0.1) 1px, transparent 1px)`,
                         backgroundSize: '100px 100px',
                     }}
                 />
@@ -101,7 +101,7 @@ export function Portfolio() {
                 <div
                     className="absolute inset-0"
                     style={{
-                        backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 50px, rgba(197, 160, 89, 0.15) 50px, rgba(197, 160, 89, 0.15) 51px)`,
+                        backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 50px, rgba(161, 161, 170, 0.15) 50px, rgba(161, 161, 170, 0.15) 51px)`,
                     }}
                 />
             </div>
@@ -171,7 +171,7 @@ export function Portfolio() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, margin: "-100px" }}
                                 transition={{ duration: 0.8, delay: index * 0.1 }}
-                                className={`group relative ${colSpan} ${height} overflow-hidden bg-gray-900`}
+                                className={`group relative ${colSpan} ${height} overflow-hidden bg-card`}
                             >
                                 {/* Image Container */}
                                 <div className="absolute inset-0 w-full h-full overflow-hidden">

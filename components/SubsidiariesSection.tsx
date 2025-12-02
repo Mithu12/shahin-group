@@ -93,7 +93,7 @@ export function SubsidiariesSection() {
                 <div
                     className="absolute inset-0"
                     style={{
-                        backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C5A059' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+                        backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23a1a1aa' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
                     }}
                 />
             </div>
@@ -122,7 +122,7 @@ export function SubsidiariesSection() {
                     ease: "easeInOut",
                     delay: 1
                 }}
-                className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#00365E]/20 rounded-full blur-[120px] pointer-events-none"
+                className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#18181b]/20 rounded-full blur-[120px] pointer-events-none"
             />
 
             <div className="container mx-auto px-6 relative z-10">
@@ -184,7 +184,7 @@ export function SubsidiariesSection() {
                                 variants={{
                                     hover: {
                                         y: -10,
-                                        borderColor: "rgba(197, 160, 89, 0.5)",
+                                        borderColor: "rgba(161, 161, 170, 0.5)",
                                         boxShadow: "0 20px 50px rgba(0,0,0,0.3)"
                                     }
                                 }}
@@ -206,7 +206,7 @@ export function SubsidiariesSection() {
                                             className="object-cover"
                                         />
                                     </motion.div>
-                                    <div className="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-[#00365E]" />
+                                    <div className="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-[#18181b]" />
 
                                     {/* Shine Effect */}
                                     <motion.div
@@ -220,7 +220,7 @@ export function SubsidiariesSection() {
                                 </div>
 
                                 {/* Content Container - Bottom Half */}
-                                <div className="relative h-[40%] p-6 flex flex-col justify-between bg-[#00365E]">
+                                <div className="relative h-[40%] p-6 flex flex-col justify-between bg-[#18181b]">
                                     <div>
                                         <div className="flex items-center justify-between mb-2">
                                             <span className="font-body text-[10px] uppercase tracking-[0.2em] text-brand-gold font-semibold">
@@ -229,7 +229,7 @@ export function SubsidiariesSection() {
                                             <motion.div
                                                 className="w-8 h-px bg-white/10"
                                                 variants={{
-                                                    hover: { width: "3rem", backgroundColor: "#C5A059" }
+                                                    hover: { width: "3rem", backgroundColor: "#a1a1aa" }
                                                 }}
                                                 transition={{ duration: 0.3 }}
                                             />
@@ -237,7 +237,7 @@ export function SubsidiariesSection() {
                                         <motion.h4
                                             className="font-display text-2xl text-white mb-2 leading-tight"
                                             variants={{
-                                                hover: { color: "#C5A059" }
+                                                hover: { color: "#a1a1aa" }
                                             }}
                                             transition={{ duration: 0.3 }}
                                         >
@@ -252,14 +252,14 @@ export function SubsidiariesSection() {
                                         <motion.span
                                             className="text-[10px] uppercase tracking-widest text-white font-semibold"
                                             variants={{
-                                                hover: { color: "#C5A059" }
+                                                hover: { color: "#a1a1aa" }
                                             }}
                                         >
                                             Explore
                                         </motion.span>
                                         <motion.div
                                             variants={{
-                                                hover: { x: 5, color: "#C5A059" }
+                                                hover: { x: 5, color: "#a1a1aa" }
                                             }}
                                             transition={{ duration: 0.3 }}
                                         >

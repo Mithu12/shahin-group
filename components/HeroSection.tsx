@@ -19,7 +19,7 @@ export function HeroSection() {
     const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
     return (
-        <section ref={containerRef} className="relative h-screen w-full overflow-hidden flex items-center justify-center bg-background-dark">
+        <section ref={containerRef} className="relative h-screen w-full overflow-hidden flex items-center justify-center bg-background">
             {/* Parallax Background Layer */}
             <motion.div
                 style={{ y, opacity }}
@@ -69,7 +69,7 @@ export function HeroSection() {
                     transition={{ duration: 0.8, delay: 0.5 }}
                     className="overflow-hidden"
                 >
-                    <h2 className="font-display text-sm md:text-base tracking-[0.4em] uppercase text-primary font-bold mb-6">
+                    <h2 className="font-display text-sm md:text-base tracking-[0.4em] uppercase text-amber-50 font-bold mb-6">
                         Visionary Architecture
                     </h2>
                 </motion.div>
@@ -152,7 +152,7 @@ export function HeroSection() {
                 initial={{ y: 100, opacity: 0 }}
                 animate={!isLoading ? { y: 0, opacity: 1 } : { y: 100, opacity: 0 }}
                 transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
-                className="absolute bottom-0 left-0 w-full text-background-light dark:text-background-dark z-40"
+                className="absolute bottom-0 left-0 w-full text-background z-40"
             >
                 <AngularDividerBottom />
             </motion.div>

@@ -43,83 +43,80 @@
   --radius-xl: calc(var(--radius) + 4px);
 
   /* MGI Premium Theme Variables */
-  --color-brand-navy: #002B49;
-  --color-brand-gold: #C5A059;
-  --color-brand-light: #F9FAFB;
+  --color-brand-navy: #18181b;
+  --color-brand-gold: #a1a1aa;
+  --color-brand-light: #09090b;
   --font-display: var(--font-cormorant-garamond), serif;
   --font-body: var(--font-poppins), sans-serif;
 }
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: #002B49;
-  /* Deep Navy Text */
-  --card: oklch(1 0 0);
-  --card-foreground: #002B49;
-  --popover: oklch(1 0 0);
-  --popover-foreground: #002B49;
-  --primary: #C5A059;
-  /* Gold Accent */
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: #F9FAFB;
-  --secondary-foreground: #002B49;
-  --muted: #F3F4F6;
-  --muted-foreground: #6B7280;
-  --accent: #F3F4F6;
-  --accent-foreground: #002B49;
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: #E5E7EB;
-  --input: #E5E7EB;
-  --ring: #C5A059;
+  --background: #ffffff;
+  --foreground: #18181b;
+  --card: #ffffff;
+  --card-foreground: #18181b;
+  --popover: #ffffff;
+  --popover-foreground: #18181b;
+  --primary: #71717a;
+  --primary-foreground: #fafafa;
+  --secondary: #f4f4f5;
+  --secondary-foreground: #18181b;
+  --muted: #f4f4f5;
+  --muted-foreground: #71717a;
+  --accent: #f4f4f5;
+  --accent-foreground: #18181b;
+  --destructive: #7f1d1d;
+  --border: #e4e4e7;
+  --input: #e4e4e7;
+  --ring: #71717a;
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --sidebar: #ffffff;
+  --sidebar-foreground: #18181b;
+  --sidebar-primary: #71717a;
+  --sidebar-primary-foreground: #fafafa;
+  --sidebar-accent: #f4f4f5;
+  --sidebar-accent-foreground: #18181b;
+  --sidebar-border: #e4e4e7;
+  --sidebar-ring: #71717a;
 }
 
 .dark {
-  --background: #002B49;
-  /* Deep Navy Background */
-  --foreground: oklch(0.985 0 0);
-  --card: #00365E;
-  --card-foreground: oklch(0.985 0 0);
-  --popover: #00365E;
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: #C5A059;
-  --primary-foreground: #002B49;
-  --secondary: #00365E;
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: #00365E;
-  --muted-foreground: #9CA3AF;
-  --accent: #00365E;
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: #1E4B6E;
-  --input: #1E4B6E;
-  --ring: #C5A059;
+  --background: #09090b;
+  --foreground: #fafafa;
+  --card: #18181b;
+  --card-foreground: #fafafa;
+  --popover: #18181b;
+  --popover-foreground: #fafafa;
+  --primary: #a1a1aa;
+  --primary-foreground: #09090b;
+  --secondary: #27272a;
+  --secondary-foreground: #fafafa;
+  --muted: #27272a;
+  --muted-foreground: #a1a1aa;
+  --accent: #27272a;
+  --accent-foreground: #fafafa;
+  --destructive: #7f1d1d;
+  --border: #27272a;
+  --input: #27272a;
+  --ring: #a1a1aa;
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
   --chart-4: oklch(0.627 0.265 303.9);
   --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --sidebar: #18181b;
+  --sidebar-foreground: #fafafa;
+  --sidebar-primary: #a1a1aa;
+  --sidebar-primary-foreground: #09090b;
+  --sidebar-accent: #27272a;
+  --sidebar-accent-foreground: #fafafa;
+  --sidebar-border: #27272a;
+  --sidebar-ring: #a1a1aa;
 }
 
 @layer base {
@@ -163,7 +160,7 @@
 }
 
 .hero-gradient {
-  background: linear-gradient(to bottom, rgba(0, 43, 73, 0.4), rgba(0, 43, 73, 0.9));
+  background: linear-gradient(to bottom, rgba(9, 9, 11, 0.4), rgba(9, 9, 11, 0.9));
 }
 
 /* Clip Paths for Angular Shapes */

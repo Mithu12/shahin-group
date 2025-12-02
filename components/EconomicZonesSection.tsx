@@ -47,14 +47,14 @@ export const EconomicZonesSection: React.FC = () => {
     return (
         <section
             ref={sectionRef}
-            className="relative py-20 md:py-28 bg-gradient-to-b from-background-light to-white dark:from-background-dark dark:to-background-dark overflow-hidden"
+            className="relative py-20 md:py-28 bg-gradient-to-b from-zinc-50 to-white overflow-hidden"
         >
             {/* Elegant Background Pattern */}
             <div className="absolute inset-0 opacity-[0.02]">
                 <div
                     className="absolute inset-0"
                     style={{
-                        backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0L100 100M100 0L0 100' stroke='%23C5A059' stroke-width='0.5' fill='none'/%3E%3C/svg%3E")`,
+                        backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0L100 100M100 0L0 100' stroke='%23a1a1aa' stroke-width='0.5' fill='none'/%3E%3C/svg%3E")`,
                         backgroundSize: '50px 50px',
                     }}
                 />
@@ -129,7 +129,7 @@ export const EconomicZonesSection: React.FC = () => {
                             <Image src={zones[0].image} alt={zones[0].title} fill className="object-cover" />
                         </motion.div>
 
-                        <div className="absolute inset-0 bg-gradient-to-br from-[#002B49]/85 via-[#002B49]/80 to-[#00365E]/85 group-hover:from-[#002B49]/75 group-hover:via-[#002B49]/70 group-hover:to-[#00365E]/75 backdrop-blur-[1px] transition-all duration-500" />
+                        <div className="absolute inset-0 bg-gradient-to-br from-[#09090b]/85 via-[#09090b]/80 to-[#18181b]/85 group-hover:from-[#09090b]/75 group-hover:via-[#09090b]/70 group-hover:to-[#18181b]/75 backdrop-blur-[1px] transition-all duration-500" />
 
                         <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-4">
                             <motion.div
@@ -172,7 +172,7 @@ export const EconomicZonesSection: React.FC = () => {
                             <Image src={zones[1].image} alt={zones[1].title} fill className="object-cover" />
                         </motion.div>
 
-                        <div className="absolute inset-0 bg-gradient-to-br from-[#002B49]/90 via-[#00365E]/85 to-[#002B49]/90 group-hover:from-[#002B49]/80 group-hover:via-[#00365E]/75 group-hover:to-[#002B49]/80 backdrop-blur-[1px] transition-all duration-500" />
+                        <div className="absolute inset-0 bg-gradient-to-br from-[#09090b]/90 via-[#18181b]/85 to-[#09090b]/90 group-hover:from-[#09090b]/80 group-hover:via-[#18181b]/75 group-hover:to-[#09090b]/80 backdrop-blur-[1px] transition-all duration-500" />
 
                         <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-6">
                             <motion.div
@@ -227,7 +227,7 @@ export const EconomicZonesSection: React.FC = () => {
                             <Image src={zones[2].image} alt={zones[2].title} fill className="object-cover" />
                         </motion.div>
 
-                        <div className="absolute inset-0 bg-gradient-to-br from-[#002B49]/85 via-[#002B49]/80 to-[#00365E]/85 group-hover:from-[#002B49]/75 group-hover:via-[#002B49]/70 group-hover:to-[#00365E]/75 backdrop-blur-[1px] transition-all duration-500" />
+                        <div className="absolute inset-0 bg-gradient-to-br from-[#09090b]/85 via-[#09090b]/80 to-[#18181b]/85 group-hover:from-[#09090b]/75 group-hover:via-[#09090b]/70 group-hover:to-[#18181b]/75 backdrop-blur-[1px] transition-all duration-500" />
 
                         <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-4">
                             <motion.div

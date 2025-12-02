@@ -260,7 +260,7 @@ export const SustainabilitySection = () => {
     ];
 
     return (
-        <section className="relative py-20 md:py-32 overflow-hidden bg-gradient-to-b from-white to-background-light dark:from-gray-900 dark:to-background-dark">
+        <section className="relative py-20 md:py-32 overflow-hidden bg-gradient-to-b from-white to-zinc-50">
             {/* Subtle background pattern */}
             <div className="absolute inset-0 opacity-[0.02] dark:opacity-[0.01] pointer-events-none">
                 <div

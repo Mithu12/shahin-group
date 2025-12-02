@@ -14,11 +14,11 @@ export function AboutSection() {
     ];
 
     return (
-        <section id="philosophy" className="relative py-24 md:py-32 bg-gradient-to-b from-background-light to-white dark:from-background-dark dark:to-background-dark overflow-hidden">
+        <section id="philosophy" className="relative py-24 md:py-32 bg-gradient-to-b from-zinc-50 to-white overflow-hidden">
             {/* Elegant Background Pattern */}
             <div className="absolute inset-0 opacity-[0.03]">
                 <div className="absolute inset-0" style={{
-                    backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0L100 100M100 0L0 100' stroke='%23000000' stroke-width='0.5' fill='none'/%3E%3C/svg%3E")`,
+                    backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0L100 100M100 0L0 100' stroke='%23a1a1aa' stroke-width='0.5' fill='none'/%3E%3C/svg%3E")`,
                     backgroundSize: '50px 50px',
                 }} />
             </div>
