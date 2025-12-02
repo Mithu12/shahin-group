@@ -32,13 +32,12 @@ export function Header() {
             initial={{ y: -100, opacity: 0 }}
             animate={!isLoading ? { y: 0, opacity: 1 } : { y: -100, opacity: 0 }}
             transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
-            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-background/90 backdrop-blur-md py-4 shadow-sm' : 'bg-transparent py-6'
+            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-brand-light/90 backdrop-blur-md py-4 shadow-sm' : 'bg-transparent py-6'
                 }`}
         >
             <div className="container max-w-7xl mx-auto px-6 flex justify-between items-center">
                 <Link href="/" className="z-50">
-                    <h1 className={`font-display text-2xl font-bold tracking-widest transition-colors duration-300 ${isScrolled ? 'text-foreground' : 'text-white'
-                        }`}>
+                    <h1 className="font-display text-2xl font-bold tracking-widest transition-colors duration-300 text-white">
                         SHAHIN GROUP
                     </h1>
                 </Link>
@@ -49,16 +48,12 @@ export function Header() {
                         <Link
                             key={link.name}
                             href={link.href}
-                            className={`text-sm uppercase tracking-wider font-medium transition-colors duration-300 hover:text-primary ${isScrolled ? 'text-foreground/80' : 'text-white/90'
-                                }`}
+                            className="text-sm uppercase tracking-wider font-medium transition-colors duration-300 hover:text-primary text-white/90"
                         >
                             {link.name}
                         </Link>
                     ))}
-                    <button className={`px-6 py-2 text-sm uppercase tracking-wider border transition-all duration-300 ${isScrolled
-                        ? 'border-primary text-primary hover:bg-primary hover:text-white'
-                        : 'border-white text-white hover:bg-white hover:text-black'
-                        }`}>
+                    <button className="px-6 py-2 text-sm uppercase tracking-wider border transition-all duration-300 border-white text-white hover:bg-white hover:text-black">
                         Inquire
                     </button>
                 </nav>
@@ -69,9 +64,9 @@ export function Header() {
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 >
                     {isMobileMenuOpen ? (
-                        <X className={`w-8 h-8 ${isScrolled ? 'text-foreground' : 'text-white'}`} />
+                        <X className="w-8 h-8 text-white" />
                     ) : (
-                        <Menu className={`w-8 h-8 ${isScrolled ? 'text-foreground' : 'text-white'}`} />
+                        <Menu className="w-8 h-8 text-white" />
                     )}
                 </button>
 
