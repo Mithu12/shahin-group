@@ -75,15 +75,28 @@ export function HeroSection() {
                 </motion.div>
 
                 <div className="relative mb-8">
-                    {/* Main Title with Staggered Reveal */}
+                    {/* Main Title with Staggered Reveal - Layered Glass Effect */}
                     <div className="overflow-hidden">
                         <motion.h1
                             initial={{ y: 100 }}
                             animate={!isLoading ? { y: 0 } : { y: 100 }}
                             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1], delay: 0.4 }}
-                            className="font-display text-6xl md:text-8xl lg:text-[10rem] font-bold leading-[0.9] tracking-tighter text-white mix-blend-overlay"
+                            className="relative font-display text-6xl md:text-8xl lg:text-[10rem] font-bold leading-[0.9] tracking-tighter"
                         >
-                            SHAHIN
+                            {/* Background layer - shows through */}
+                            <span className="absolute inset-0" style={{
+                                color: 'transparent',
+                                WebkitTextStroke: '1px rgba(255, 255, 255, 0.3)',
+                            }}>
+                                SHAHIN
+                            </span>
+                            {/* Foreground layer - solid white with slight transparency */}
+                            <span className="relative" style={{
+                                color: 'rgba(255, 255, 255, 0.05)',
+                                WebkitTextStroke: '1px rgba(255, 255, 255, 0.6)',
+                            }}>
+                                SHAHIN
+                            </span>
                         </motion.h1>
                     </div>
                     <div className="overflow-hidden -mt-2 md:-mt-6">
@@ -91,9 +104,22 @@ export function HeroSection() {
                             initial={{ y: 100 }}
                             animate={!isLoading ? { y: 0 } : { y: 100 }}
                             transition={{ duration: 1, delay: 0.55, ease: [0.22, 1, 0.36, 1] }}
-                            className="font-display text-6xl md:text-8xl lg:text-[10rem] font-bold leading-[0.9] tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-white/50"
+                            className="relative font-display text-6xl md:text-8xl lg:text-[10rem] font-bold leading-[0.9] tracking-tighter"
                         >
-                            GROUP
+                            {/* Background layer - shows through */}
+                            <span className="absolute inset-0" style={{
+                                color: 'transparent',
+                                WebkitTextStroke: '1px rgba(255, 255, 255, 0.3)',
+                            }}>
+                                GROUP
+                            </span>
+                            {/* Foreground layer - solid white with slight transparency */}
+                            <span className="relative" style={{
+                                color: 'rgba(255, 255, 255, 0.05)',
+                                WebkitTextStroke: '1px rgba(255, 255, 255, 0.6)',
+                            }}>
+                                GROUP
+                            </span>
                         </motion.h1>
                     </div>
                 </div>
