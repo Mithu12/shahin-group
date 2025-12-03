@@ -129,7 +129,7 @@ export const EconomicZonesSection: React.FC = () => {
                             <Image src={zones[0].image} alt={zones[0].title} fill className="object-cover" />
                         </motion.div>
 
-                        <div className="absolute inset-0 bg-gradient-to-br from-[#09090b]/85 via-[#09090b]/80 to-[#18181b]/85 group-hover:from-[#09090b]/75 group-hover:via-[#09090b]/70 group-hover:to-[#18181b]/75 backdrop-blur-[1px] transition-all duration-500" />
+                        <div className="absolute inset-0 bg-gradient-to-br from-[#09090b]/60 via-[#09090b]/60 to-[#18181b]/60 group-hover:from-[#09090b]/50 group-hover:via-[#09090b]/50 group-hover:to-[#18181b]/50 backdrop-blur-[1px] transition-all duration-500" />
 
                         <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-4">
                             <motion.div
@@ -172,8 +172,7 @@ export const EconomicZonesSection: React.FC = () => {
                             <Image src={zones[1].image} alt={zones[1].title} fill className="object-cover" />
                         </motion.div>
 
-                        <div className="absolute inset-0 bg-gradient-to-br from-[#09090b]/90 via-[#18181b]/85 to-[#09090b]/90 group-hover:from-[#09090b]/80 group-hover:via-[#18181b]/75 group-hover:to-[#09090b]/80 backdrop-blur-[1px] transition-all duration-500" />
-
+                        <div className="absolute inset-0 bg-gradient-to-br from-[#09090b]/60 via-[#09090b]/60 to-[#18181b]/60 group-hover:from-[#09090b]/50 group-hover:via-[#09090b]/50 group-hover:to-[#18181b]/50 backdrop-blur-[1px] transition-all duration-500" />
                         <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-6">
                             <motion.div
                                 initial={{ opacity: 0, scale: 0 }}
@@ -227,7 +226,7 @@ export const EconomicZonesSection: React.FC = () => {
                             <Image src={zones[2].image} alt={zones[2].title} fill className="object-cover" />
                         </motion.div>
 
-                        <div className="absolute inset-0 bg-gradient-to-br from-[#09090b]/85 via-[#09090b]/80 to-[#18181b]/85 group-hover:from-[#09090b]/75 group-hover:via-[#09090b]/70 group-hover:to-[#18181b]/75 backdrop-blur-[1px] transition-all duration-500" />
+                        <div className="absolute inset-0 bg-gradient-to-br from-[#09090b]/60 via-[#09090b]/60 to-[#18181b]/60 group-hover:from-[#09090b]/50 group-hover:via-[#09090b]/50 group-hover:to-[#18181b]/50 backdrop-blur-[1px] transition-all duration-500" />
 
                         <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-4">
                             <motion.div
