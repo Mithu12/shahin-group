@@ -47,7 +47,7 @@ export const EconomicZonesSection: React.FC = () => {
     return (
         <section
             ref={sectionRef}
-            className="relative py-20 md:py-28 bg-gradient-to-b from-zinc-50 to-white overflow-hidden"
+            className="relative py-20 md:py-28 bg-brand-navy overflow-hidden"
         >
             {/* Elegant Background Pattern */}
             <div className="absolute inset-0 opacity-[0.02]">
@@ -74,13 +74,13 @@ export const EconomicZonesSection: React.FC = () => {
                             initial={{ scaleX: 0 }}
                             animate={isInView ? { scaleX: 1 } : { scaleX: 0 }}
                             transition={{ duration: 0.8, delay: 0.2 }}
-                            className="h-[2px] w-16 bg-primary origin-right"
+                            className="h-[2px] w-16 bg-brand-gold origin-right"
                         />
                         <motion.span
                             initial={{ opacity: 0 }}
                             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
                             transition={{ duration: 0.6, delay: 0.4 }}
-                            className="text-primary text-xs md:text-sm uppercase tracking-[0.3em] font-bold"
+                            className="text-brand-gold text-xs md:text-sm uppercase tracking-[0.3em] font-bold"
                         >
                             Economic Zones
                         </motion.span>
@@ -88,20 +88,20 @@ export const EconomicZonesSection: React.FC = () => {
                             initial={{ scaleX: 0 }}
                             animate={isInView ? { scaleX: 1 } : { scaleX: 0 }}
                             transition={{ duration: 0.8, delay: 0.2 }}
-                            className="h-[2px] w-16 bg-primary origin-left"
+                            className="h-[2px] w-16 bg-brand-gold origin-left"
                         />
                     </div>
 
-                    <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-3 text-foreground leading-tight">
+                    <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-3 text-white leading-tight">
                         Our First Step Unleashed
                         <br />
                         <span className="relative inline-block mt-2">
-                            <span className="relative z-10 text-primary">Endless Possibilities</span>
+                            <span className="relative z-10 text-brand-gold">Endless Possibilities</span>
                             <motion.span
                                 initial={{ width: 0 }}
                                 animate={isInView ? { width: '100%' } : { width: 0 }}
                                 transition={{ duration: 0.8, delay: 0.6 }}
-                                className="absolute bottom-1 left-0 h-2 bg-primary/20"
+                                className="absolute bottom-1 left-0 h-2 bg-brand-gold/20"
                             />
                         </span>
                     </h2>
@@ -142,7 +142,7 @@ export const EconomicZonesSection: React.FC = () => {
                                 <h3 className="font-display text-xl md:text-2xl lg:text-3xl font-bold mb-1 tracking-wide">
                                     {zones[0].title}
                                 </h3>
-                                <div className="w-12 h-[2px] bg-primary mx-auto my-2" />
+                                <div className="w-12 h-[2px] bg-brand-gold mx-auto my-2" />
                                 <p className="text-xs md:text-sm lg:text-base font-semibold tracking-wider opacity-90">
                                     {zones[0].subtitle}
                                 </p>
@@ -180,9 +180,9 @@ export const EconomicZonesSection: React.FC = () => {
                                 animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}
                                 transition={{ duration: 0.8, delay: 0.6, type: 'spring', stiffness: 200 }}
                                 whileHover={{ scale: 1.15, rotate: 10 }}
-                                className="mb-8 w-28 h-28 md:w-32 md:h-32 lg:w-36 lg:h-36 bg-gradient-to-br from-primary/30 via-primary/20 to-transparent backdrop-blur-md rounded-full flex items-center justify-center border-2 border-primary/50 shadow-lg shadow-primary/20"
+                                className="mb-8 w-28 h-28 md:w-32 md:h-32 lg:w-36 lg:h-36 bg-gradient-to-br from-brand-gold/30 via-brand-gold/20 to-transparent backdrop-blur-md rounded-full flex items-center justify-center border-2 border-brand-gold/50 shadow-lg shadow-brand-gold/20"
                             >
-                                <span className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-primary">
+                                <span className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-brand-gold">
                                     I
                                 </span>
                             </motion.div>
@@ -197,7 +197,7 @@ export const EconomicZonesSection: React.FC = () => {
                                 <h3 className="font-display text-2xl md:text-3xl lg:text-4xl font-bold mb-3 tracking-wide">
                                     {zones[1].title}
                                 </h3>
-                                <div className="w-16 h-[2px] bg-primary mx-auto my-3" />
+                                <div className="w-16 h-[2px] bg-brand-gold mx-auto my-3" />
                                 <p className="text-sm md:text-base lg:text-lg font-semibold tracking-wider opacity-95">
                                     {zones[1].subtitle}
                                 </p>
@@ -240,7 +240,7 @@ export const EconomicZonesSection: React.FC = () => {
                                 <h3 className="font-display text-xl md:text-2xl lg:text-3xl font-bold mb-1 tracking-wide">
                                     {zones[2].title}
                                 </h3>
-                                <div className="w-12 h-[2px] bg-primary mx-auto my-2" />
+                                <div className="w-12 h-[2px] bg-brand-gold mx-auto my-2" />
                                 <p className="text-xs md:text-sm lg:text-base font-semibold tracking-wider opacity-90">
                                     {zones[2].subtitle}
                                 </p>

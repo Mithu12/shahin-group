@@ -39,9 +39,9 @@ const projects = [
 
 export function Portfolio() {
     return (
-        <section id="projects" className="relative py-24 md:py-40 bg-white overflow-hidden">
+        <section id="projects" className="relative py-24 md:py-40 bg-brand-navy overflow-hidden">
             {/* Angular Divider Top */}
-            <div className="absolute top-0 left-0 w-full text-background z-20 -mt-1">
+            <div className="absolute top-0 left-0 w-full text-brand-navy z-20 -mt-1">
                 <AngularDividerTop />
             </div>
 
@@ -111,7 +111,7 @@ export function Portfolio() {
 
             {/* Large Watermark */}
             <div className="absolute top-20 left-0 w-full overflow-hidden pointer-events-none opacity-[0.03] dark:opacity-[0.05]">
-                <h1 className="text-[15vw] font-display font-bold text-foreground leading-none tracking-tighter text-center uppercase">
+                <h1 className="text-[15vw] font-display font-bold text-white leading-none tracking-tighter text-center uppercase">
                     Excellence
                 </h1>
             </div>
@@ -126,13 +126,13 @@ export function Portfolio() {
                         transition={{ duration: 0.6 }}
                         className="relative"
                     >
-                        <div className="absolute -left-6 -top-6 w-12 h-12 border-l-2 border-t-2 border-primary/30" />
-                        <h4 className="text-primary text-sm uppercase tracking-[0.3em] font-bold mb-4 pl-2">
+                        <div className="absolute -left-6 -top-6 w-12 h-12 border-l-2 border-t-2 border-brand-gold/30" />
+                        <h4 className="text-brand-gold text-sm uppercase tracking-[0.3em] font-bold mb-4 pl-2">
                             Our Portfolio
                         </h4>
-                        <h2 className="font-display text-5xl md:text-7xl font-bold text-foreground leading-tight">
+                        <h2 className="font-display text-5xl md:text-7xl font-bold text-white leading-tight">
                             Featured <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/60">
+                            <span className="text-transparent bg-clip-text bg-linear-to-r from-brand-gold to-brand-gold/60">
                                 Projects
                             </span>
                         </h2>
@@ -145,11 +145,11 @@ export function Portfolio() {
                         transition={{ duration: 0.6, delay: 0.2 }}
                         className="hidden md:flex items-center gap-4 group"
                     >
-                        <span className="text-sm font-bold uppercase tracking-widest text-foreground group-hover:text-primary transition-colors">
+                        <span className="text-sm font-bold uppercase tracking-widest text-white group-hover:text-brand-gold transition-colors">
                             View All Works
                         </span>
-                        <div className="w-12 h-12 rounded-full border border-foreground/20 flex items-center justify-center group-hover:bg-primary group-hover:border-primary transition-all duration-300">
-                            <ArrowUpRight className="w-5 h-5 text-foreground group-hover:text-white transition-colors" />
+                        <div className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-brand-gold group-hover:border-brand-gold transition-all duration-300">
+                            <ArrowUpRight className="w-5 h-5 text-white transition-colors" />
                         </div>
                     </motion.button>
                 </div>
@@ -171,7 +171,7 @@ export function Portfolio() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, margin: "-100px" }}
                                 transition={{ duration: 0.8, delay: index * 0.1 }}
-                                className={`group relative ${colSpan} ${height} overflow-hidden bg-card`}
+                                className={`group relative ${colSpan} ${height} overflow-hidden bg-brand-light`}
                             >
                                 {/* Image Container */}
                                 <div className="absolute inset-0 w-full h-full overflow-hidden">
@@ -216,9 +216,9 @@ export function Portfolio() {
 
                                 {/* Decorative Borders */}
                                 <div className="absolute top-0 left-0 w-full h-full p-4 pointer-events-none">
-                                    <div className="w-full h-full border border-white/10 group-hover:border-primary/50 transition-colors duration-500 relative">
-                                        <div className="absolute top-0 left-0 w-2 h-2 border-l-2 border-t-2 border-primary opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                                        <div className="absolute bottom-0 right-0 w-2 h-2 border-r-2 border-b-2 border-primary opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                                    <div className="w-full h-full border border-white/10 group-hover:border-brand-gold/50 transition-colors duration-500 relative">
+                                        <div className="absolute top-0 left-0 w-2 h-2 border-l-2 border-t-2 border-brand-gold opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                                        <div className="absolute bottom-0 right-0 w-2 h-2 border-r-2 border-b-2 border-brand-gold opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                                     </div>
                                 </div>
                             </motion.div>
@@ -227,7 +227,7 @@ export function Portfolio() {
                 </div>
 
                 <div className="mt-16 text-center md:hidden">
-                    <button className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white text-sm font-bold uppercase tracking-widest hover:bg-primary-dark transition-colors">
+                    <button className="inline-flex items-center gap-2 px-8 py-4 bg-brand-gold text-black text-sm font-bold uppercase tracking-widest hover:bg-brand-gold/90 transition-colors">
                         View All Projects
                     </button>
                 </div>

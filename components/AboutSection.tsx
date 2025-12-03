@@ -14,7 +14,7 @@ export function AboutSection() {
     ];
 
     return (
-        <section id="philosophy" className="relative py-24 md:py-32 bg-gradient-to-b from-zinc-50 to-white overflow-hidden">
+        <section id="philosophy" className="relative py-24 md:py-32 bg-brand-navy overflow-hidden">
             {/* Elegant Background Pattern */}
             <div className="absolute inset-0 opacity-[0.03]">
                 <div className="absolute inset-0" style={{
@@ -33,28 +33,28 @@ export function AboutSection() {
                     className="text-center mb-20"
                 >
                     <div className="flex items-center justify-center gap-4 mb-6">
-                        <div className="h-[2px] w-12 bg-primary" />
-                        <h4 className="text-primary text-sm uppercase tracking-[0.3em] font-bold">
+                        <div className="h-[2px] w-12 bg-brand-gold" />
+                        <h4 className="text-brand-gold text-sm uppercase tracking-[0.3em] font-bold">
                             Our Philosophy
                         </h4>
-                        <div className="h-[2px] w-12 bg-primary" />
+                        <div className="h-[2px] w-12 bg-brand-gold" />
                     </div>
 
-                    <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-foreground">
+                    <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-white">
                         Building a Legacy of <br />
                         <span className="relative inline-block">
-                            <span className="relative z-10 text-primary">Global Impact</span>
+                            <span className="relative z-10 text-brand-gold">Global Impact</span>
                             <motion.span
                                 initial={{ width: 0 }}
                                 whileInView={{ width: '100%' }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.8, delay: 0.3 }}
-                                className="absolute bottom-2 left-0 h-3 bg-primary/20"
+                                className="absolute bottom-2 left-0 h-3 bg-brand-gold/20"
                             />
                         </span>
                     </h2>
 
-                    <p className="font-body text-muted-foreground text-lg md:text-xl leading-relaxed max-w-4xl mx-auto">
+                    <p className="font-body text-white/70 text-lg md:text-xl leading-relaxed max-w-4xl mx-auto">
                         At Shahin Group, we don't just construct buildings; we engineer ecosystems of progress.
                         Our vision extends beyond the skyline, rooting itself in the community and branching out
                         to the global stage.
@@ -72,8 +72,8 @@ export function AboutSection() {
                         className="relative"
                     >
                         {/* Decorative Corner Frames */}
-                        <div className="absolute -top-6 -left-6 w-20 h-20 border-l-4 border-t-4 border-primary z-30" />
-                        <div className="absolute -bottom-6 -right-6 w-20 h-20 border-r-4 border-b-4 border-primary z-30" />
+                        <div className="absolute -top-6 -left-6 w-20 h-20 border-l-4 border-t-4 border-brand-gold z-30" />
+                        <div className="absolute -bottom-6 -right-6 w-20 h-20 border-r-4 border-b-4 border-brand-gold z-30" />
 
                         <div className="grid grid-cols-2 gap-4 h-[600px]">
                             {/* Large Image */}
@@ -131,7 +131,7 @@ export function AboutSection() {
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.2 }}
-                            className="absolute -top-4 -right-4 w-full h-full border-2 border-primary/30 -z-10"
+                            className="absolute -top-4 -right-4 w-full h-full border-2 border-brand-gold/30 -z-10"
                         />
                     </motion.div>
 
@@ -145,9 +145,9 @@ export function AboutSection() {
                     >
                         <div className="space-y-8">
                             {/* Mission Statement */}
-                            <div className="bg-gradient-to-br from-primary/5 to-primary/10 p-8 border-l-4 border-primary">
-                                <h3 className="font-display text-2xl font-bold mb-4 text-foreground">Our Mission</h3>
-                                <p className="font-body text-muted-foreground leading-relaxed">
+                            <div className="bg-brand-gold/10 p-8 border-l-4 border-brand-gold">
+                                <h3 className="font-display text-2xl font-bold mb-4 text-white">Our Mission</h3>
+                                <p className="font-body text-white/70 leading-relaxed">
                                     Every project is a commitment to excellence, sustainability, and the future of urban living.
                                     We blend innovation with tradition, creating spaces that inspire and endure.
                                 </p>
@@ -168,12 +168,12 @@ export function AboutSection() {
                                         transition={{ duration: 0.5, delay: index * 0.1 }}
                                         className="flex items-start gap-4 group cursor-pointer"
                                     >
-                                        <div className="w-2 h-2 bg-primary rounded-full mt-2 group-hover:scale-150 transition-transform duration-300" />
+                                        <div className="w-2 h-2 bg-brand-gold rounded-full mt-2 group-hover:scale-150 transition-transform duration-300" />
                                         <div>
-                                            <h4 className="font-display text-lg font-bold text-foreground group-hover:text-primary transition-colors duration-300">
+                                            <h4 className="font-display text-lg font-bold text-white group-hover:text-brand-gold transition-colors duration-300">
                                                 {value.title}
                                             </h4>
-                                            <p className="text-muted-foreground text-sm">{value.desc}</p>
+                                            <p className="text-white/60 text-sm">{value.desc}</p>
                                         </div>
                                     </motion.div>
                                 ))}
@@ -183,7 +183,7 @@ export function AboutSection() {
                             <motion.button
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
-                                className="bg-primary text-white px-8 py-4 font-bold uppercase tracking-wider hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl"
+                                className="bg-brand-gold text-black px-8 py-4 font-bold uppercase tracking-wider hover:bg-brand-gold/90 transition-all duration-300 shadow-lg hover:shadow-xl"
                             >
                                 Discover Our Story
                             </motion.button>

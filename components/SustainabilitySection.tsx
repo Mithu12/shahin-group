@@ -32,25 +32,25 @@ const ProgressBar = ({
             className="group"
         >
             <div className="flex items-center gap-3 mb-3">
-                <div className="bg-primary/10 p-2 rounded">
-                    <Icon className="w-5 h-5 text-primary" />
+                <div className="bg-brand-gold/10 p-2 rounded">
+                    <Icon className="w-5 h-5 text-brand-gold" />
                 </div>
                 <div className="flex-1">
                     <div className="flex justify-between items-center mb-1">
-                        <span className="font-body text-sm font-semibold text-foreground">{label}</span>
-                        <span className="font-display text-sm font-bold text-primary">{value}%</span>
+                        <span className="font-body text-sm font-semibold text-white">{label}</span>
+                        <span className="font-display text-sm font-bold text-brand-gold">{value}%</span>
                     </div>
                 </div>
             </div>
-            <div className="relative h-2 bg-secondary rounded-full overflow-hidden">
+            <div className="relative h-2 bg-white/10 rounded-full overflow-hidden">
                 <motion.div
                     initial={{ width: 0 }}
                     animate={isInView ? { width: `${progress}%` } : { width: 0 }}
                     transition={{ duration: 1.5, delay: delay + 0.3, ease: "easeOut" }}
-                    className="absolute inset-y-0 left-0 bg-gradient-to-r from-primary to-primary/70 rounded-full"
+                    className="absolute inset-y-0 left-0 bg-linear-to-r from-brand-gold to-brand-gold/70 rounded-full"
                 />
             </div>
-            <p className="text-xs text-muted-foreground mt-2 font-body">Target: {target}</p>
+            <p className="text-xs text-white/60 mt-2 font-body">Target: {target}</p>
         </motion.div>
     );
 };
@@ -80,35 +80,35 @@ const InitiativeCard = ({
             transition={{ duration: 0.7, delay, ease: [0.25, 0.46, 0.45, 0.94] }}
             className="group relative"
         >
-            <div className="relative bg-card border-2 border-border hover:border-primary/50 transition-all duration-500 overflow-hidden p-8">
+            <div className="relative bg-brand-light border-2 border-white/10 hover:border-brand-gold/50 transition-all duration-500 overflow-hidden p-8">
                 {/* Corner frames */}
-                <div className="absolute top-3 left-3 w-12 h-12 border-l-2 border-t-2 border-border group-hover:border-primary transition-all duration-500 opacity-40 group-hover:opacity-100" />
-                <div className="absolute bottom-3 right-3 w-12 h-12 border-r-2 border-b-2 border-border group-hover:border-primary transition-all duration-500 opacity-40 group-hover:opacity-100" />
+                <div className="absolute top-3 left-3 w-12 h-12 border-l-2 border-t-2 border-white/10 group-hover:border-brand-gold transition-all duration-500 opacity-40 group-hover:opacity-100" />
+                <div className="absolute bottom-3 right-3 w-12 h-12 border-r-2 border-b-2 border-white/10 group-hover:border-brand-gold transition-all duration-500 opacity-40 group-hover:opacity-100" />
 
                 {/* Top accent line */}
-                <div className="absolute top-0 left-0 h-1 w-0 bg-primary group-hover:w-full transition-all duration-500 ease-out" />
+                <div className="absolute top-0 left-0 h-1 w-0 bg-brand-gold group-hover:w-full transition-all duration-500 ease-out" />
 
                 {/* Icon */}
                 <motion.div
                     whileHover={{ scale: 1.1 }}
-                    className="inline-flex bg-secondary group-hover:bg-primary/10 p-4 mb-6 transition-colors duration-300"
+                    className="inline-flex bg-white/5 group-hover:bg-brand-gold/10 p-4 mb-6 transition-colors duration-300"
                 >
-                    <Icon className="w-8 h-8 text-muted-foreground group-hover:text-primary transition-colors duration-300" />
+                    <Icon className="w-8 h-8 text-white/70 group-hover:text-brand-gold transition-colors duration-300" />
                 </motion.div>
 
                 {/* Content */}
-                <h3 className="font-display text-2xl font-bold text-foreground group-hover:text-primary transition-colors duration-300 mb-3">
+                <h3 className="font-display text-2xl font-bold text-white group-hover:text-brand-gold transition-colors duration-300 mb-3">
                     {title}
                 </h3>
-                <div className="w-12 h-0.5 bg-border group-hover:w-full group-hover:bg-primary/50 transition-all duration-500 mb-4" />
-                <p className="font-body text-muted-foreground text-sm leading-relaxed mb-4">
+                <div className="w-12 h-0.5 bg-white/20 group-hover:w-full group-hover:bg-brand-gold/50 transition-all duration-500 mb-4" />
+                <p className="font-body text-white/70 text-sm leading-relaxed mb-4">
                     {description}
                 </p>
-                <div className="font-display text-3xl font-bold text-primary">{stats}</div>
+                <div className="font-display text-3xl font-bold text-brand-gold">{stats}</div>
 
                 {/* Shimmer effect */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+                    <div className="absolute inset-0 bg-linear-to-r from-transparent via-brand-gold/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
                 </div>
             </div>
         </motion.div>
@@ -140,7 +140,7 @@ const ImpactStoryCard = ({
             transition={{ duration: 0.7, delay, ease: [0.25, 0.46, 0.45, 0.94] }}
             className="group relative overflow-hidden"
         >
-            <div className="relative bg-card border-2 border-border hover:border-primary/50 transition-all duration-500 overflow-hidden">
+            <div className="relative bg-brand-light border-2 border-white/10 hover:border-brand-gold/50 transition-all duration-500 overflow-hidden">
                 {/* Image */}
                 <div className="relative h-64 overflow-hidden">
                     <Image
@@ -152,24 +152,24 @@ const ImpactStoryCard = ({
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
 
                     {/* Location badge */}
-                    <div className="absolute top-4 right-4 bg-primary/90 backdrop-blur-sm px-3 py-1">
+                    <div className="absolute top-4 right-4 bg-brand-gold/90 backdrop-blur-sm px-3 py-1">
                         <span className="text-xs font-bold text-white uppercase tracking-wider">{location}</span>
                     </div>
                 </div>
 
                 {/* Content */}
                 <div className="p-6">
-                    <h3 className="font-display text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors duration-300">
+                    <h3 className="font-display text-xl font-bold text-white mb-3 group-hover:text-brand-gold transition-colors duration-300">
                         {title}
                     </h3>
-                    <div className="w-12 h-0.5 bg-border group-hover:w-full group-hover:bg-primary/50 transition-all duration-500 mb-4" />
-                    <p className="font-body text-sm text-muted-foreground leading-relaxed">
+                    <div className="w-12 h-0.5 bg-white/20 group-hover:w-full group-hover:bg-brand-gold/50 transition-all duration-500 mb-4" />
+                    <p className="font-body text-sm text-white/70 leading-relaxed">
                         {description}
                     </p>
 
                     {/* Read More */}
                     <div className="mt-4 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
-                        <span className="text-xs font-semibold text-primary uppercase tracking-wider">
+                        <span className="text-xs font-semibold text-brand-gold uppercase tracking-wider">
                             Read More
                         </span>
                         <motion.div
@@ -180,14 +180,14 @@ const ImpactStoryCard = ({
                                 ease: "easeInOut"
                             }}
                         >
-                            <ArrowRight className="w-4 h-4 text-primary" />
+                            <ArrowRight className="w-4 h-4 text-brand-gold" />
                         </motion.div>
                     </div>
                 </div>
 
                 {/* Corner frames */}
-                <div className="absolute top-3 left-3 w-12 h-12 border-l-2 border-t-2 border-white/50 group-hover:border-primary transition-all duration-500" />
-                <div className="absolute bottom-3 right-3 w-12 h-12 border-r-2 border-b-2 border-border group-hover:border-primary transition-all duration-500" />
+                <div className="absolute top-3 left-3 w-12 h-12 border-l-2 border-t-2 border-white/50 group-hover:border-brand-gold transition-all duration-500" />
+                <div className="absolute bottom-3 right-3 w-12 h-12 border-r-2 border-b-2 border-white/10 group-hover:border-brand-gold transition-all duration-500" />
             </div>
         </motion.div>
     );
@@ -260,7 +260,7 @@ export const SustainabilitySection = () => {
     ];
 
     return (
-        <section className="relative py-20 md:py-32 overflow-hidden bg-gradient-to-b from-white to-zinc-50">
+        <section className="relative py-20 md:py-32 overflow-hidden bg-brand-navy">
             {/* Subtle background pattern */}
             <div className="absolute inset-0 opacity-[0.02] dark:opacity-[0.01] pointer-events-none">
                 <div
@@ -293,13 +293,13 @@ export const SustainabilitySection = () => {
                             initial={{ scaleX: 0 }}
                             animate={isTitleInView ? { scaleX: 1 } : { scaleX: 0 }}
                             transition={{ duration: 0.8, delay: 0.2 }}
-                            className="h-[2px] w-16 bg-primary origin-right"
+                            className="h-[2px] w-16 bg-brand-gold origin-right"
                         />
                         <motion.span
                             initial={{ opacity: 0 }}
                             animate={isTitleInView ? { opacity: 1 } : { opacity: 0 }}
                             transition={{ duration: 0.6, delay: 0.4 }}
-                            className="px-4 py-2 bg-primary/10 text-primary text-xs md:text-sm uppercase tracking-[0.3em] font-bold"
+                            className="px-4 py-2 bg-brand-gold/10 text-brand-gold text-xs md:text-sm uppercase tracking-[0.3em] font-bold border border-brand-gold/20"
                         >
                             Sustainability & Impact
                         </motion.span>
@@ -315,16 +315,16 @@ export const SustainabilitySection = () => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={isTitleInView ? { opacity: 1, y: 0 } : {}}
                         transition={{ duration: 0.8, delay: 0.3 }}
-                        className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-foreground"
+                        className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white"
                     >
                         Building a{' '}
                         <span className="relative inline-block">
-                            <span className="relative z-10 text-primary">Sustainable Future</span>
+                            <span className="relative z-10 text-brand-gold">Sustainable Future</span>
                             <motion.span
                                 initial={{ width: 0 }}
                                 animate={isTitleInView ? { width: '100%' } : { width: 0 }}
                                 transition={{ duration: 0.8, delay: 0.6 }}
-                                className="absolute bottom-1 left-0 h-2 bg-primary/20"
+                                className="absolute bottom-1 left-0 h-2 bg-brand-gold/20"
                             />
                         </span>
                     </motion.h2>
@@ -333,7 +333,7 @@ export const SustainabilitySection = () => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={isTitleInView ? { opacity: 1, y: 0 } : {}}
                         transition={{ duration: 0.8, delay: 0.4 }}
-                        className="text-lg text-muted-foreground max-w-3xl mx-auto font-body"
+                        className="text-lg text-white/70 max-w-3xl mx-auto font-body"
                     >
                         Our commitment to environmental stewardship and social responsibility
                         drives every decision we make
@@ -358,10 +358,10 @@ export const SustainabilitySection = () => {
                         transition={{ duration: 0.8 }}
                         className="text-center mb-12"
                     >
-                        <h3 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
-                            Our <span className="text-primary">Progress</span>
+                        <h3 className="font-display text-3xl md:text-4xl font-bold text-white mb-4">
+                            Our <span className="text-brand-gold">Progress</span>
                         </h3>
-                        <p className="text-muted-foreground font-body">
+                        <p className="text-white/70 font-body">
                             Tracking our journey towards sustainability goals
                         </p>
                     </motion.div>
@@ -382,10 +382,10 @@ export const SustainabilitySection = () => {
                         transition={{ duration: 0.8 }}
                         className="text-center mb-12"
                     >
-                        <h3 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
-                            Community <span className="text-primary">Impact Stories</span>
+                        <h3 className="font-display text-3xl md:text-4xl font-bold text-white mb-4">
+                            Community <span className="text-brand-gold">Impact Stories</span>
                         </h3>
-                        <p className="text-muted-foreground font-body">
+                        <p className="text-white/70 font-body">
                             Real change in the communities we serve
                         </p>
                     </motion.div>
@@ -405,7 +405,7 @@ export const SustainabilitySection = () => {
                     transition={{ duration: 1.2, delay: 0.3 }}
                     className="mt-16 md:mt-20 flex justify-center"
                 >
-                    <div className="h-[2px] w-32 md:w-48 bg-gradient-to-r from-transparent via-primary to-transparent" />
+                    <div className="h-[2px] w-32 md:w-48 bg-linear-to-r from-transparent via-brand-gold to-transparent" />
                 </motion.div>
             </div>
         </section>

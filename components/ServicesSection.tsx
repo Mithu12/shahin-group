@@ -70,9 +70,9 @@ const cardVariants: Variants = {
 
 export function ServicesSection() {
     return (
-        <section id="expertise" className="relative pb-24 pt-10 md:pb-40 md:pt-10 bg-white overflow-hidden">
+        <section id="expertise" className="relative pb-24 pt-10 md:pb-40 md:pt-10 bg-brand-navy overflow-hidden">
             {/* Angular Divider Top - Inverted for variety if needed, or just standard */}
-            <div className="absolute top-0 left-0 w-full text-background z-20 -mt-1 transform rotate-180">
+            <div className="absolute top-0 left-0 w-full text-brand-navy z-20 -mt-1 transform rotate-180">
                 <AngularDividerTop />
             </div>
 
@@ -98,14 +98,14 @@ export function ServicesSection() {
                         transition={{ duration: 0.6, delay: 0.2 }}
                         className="inline-block mb-4"
                     >
-                        <span className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-bold tracking-[0.2em] uppercase">
+                        <span className="px-4 py-2 bg-brand-gold/10 text-brand-gold rounded-full text-sm font-bold tracking-[0.2em] uppercase border border-brand-gold/20">
                             Our Expertise
                         </span>
                     </motion.div>
-                    <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4">
-                        Sectors of <span className="text-primary">Excellence</span>
+                    <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+                        Sectors of <span className="text-brand-gold">Excellence</span>
                     </h2>
-                    <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                    <p className="text-lg text-white/70 max-w-2xl mx-auto">
                         Delivering world-class solutions across diverse industries
                     </p>
                 </motion.div>
@@ -131,11 +131,11 @@ export function ServicesSection() {
                         >
                             <div className={`
                                 relative p-8 
-                                border-2 border-border 
-                                bg-card 
+                                border-2 border-white/10 
+                                bg-brand-light 
                                 overflow-hidden
                                 transition-all duration-500
-                                hover:border-primary/50 
+                                hover:border-brand-gold/50 
                                 hover:shadow-2xl
                                 rounded-lg
                             `}>
@@ -157,8 +157,8 @@ export function ServicesSection() {
                                 `}></div>
 
                                 {/* Decorative Corner Frames */}
-                                <div className="absolute top-3 left-3 w-16 h-16 border-l-2 border-t-2 border-border group-hover:border-primary transition-all duration-500 opacity-40 group-hover:opacity-100" />
-                                <div className="absolute bottom-3 right-3 w-16 h-16 border-r-2 border-b-2 border-border group-hover:border-primary transition-all duration-500 opacity-40 group-hover:opacity-100" />
+                                <div className="absolute top-3 left-3 w-16 h-16 border-l-2 border-t-2 border-white/10 group-hover:border-brand-gold transition-all duration-500 opacity-40 group-hover:opacity-100" />
+                                <div className="absolute bottom-3 right-3 w-16 h-16 border-r-2 border-b-2 border-white/10 group-hover:border-brand-gold transition-all duration-500 opacity-40 group-hover:opacity-100" />
 
                                 {/* Content */}
                                 <div className="relative z-10">
@@ -171,11 +171,11 @@ export function ServicesSection() {
                                         transition={{ duration: 0.5 }}
                                         className={`
                                             w-16 h-16 
-                                            bg-secondary 
+                                            bg-white/5 
                                             rounded-lg
                                             flex items-center justify-center 
                                             mb-6 
-                                            group-hover:bg-primary/10
+                                            group-hover:bg-brand-gold/10
                                             transition-all duration-300
                                             relative
                                             overflow-hidden
@@ -192,7 +192,7 @@ export function ServicesSection() {
 
                                         <service.icon className={`
                                             w-8 h-8 
-                                            ${service.iconColor}
+                                            text-white/70 group-hover:text-brand-gold
                                             group-hover:scale-110
                                             transition-all duration-300
                                             relative z-10
@@ -200,21 +200,21 @@ export function ServicesSection() {
                                     </motion.div>
 
                                     {/* Title */}
-                                    <h3 className="font-display text-xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors duration-300 leading-tight">
+                                    <h3 className="font-display text-xl font-bold text-white mb-4 group-hover:text-brand-gold transition-colors duration-300 leading-tight">
                                         {service.title}
                                     </h3>
 
                                     {/* Animated divider */}
-                                    <div className="w-12 h-0.5 bg-border group-hover:w-full group-hover:bg-primary/50 transition-all duration-500 mb-4"></div>
+                                    <div className="w-12 h-0.5 bg-white/20 group-hover:w-full group-hover:bg-brand-gold/50 transition-all duration-500 mb-4"></div>
 
                                     {/* Description */}
-                                    <p className="font-body text-muted-foreground text-sm leading-relaxed group-hover:text-foreground/80 transition-colors duration-300">
+                                    <p className="font-body text-white/60 text-sm leading-relaxed group-hover:text-white/80 transition-colors duration-300">
                                         {service.description}
                                     </p>
 
                                     {/* Hover indicator */}
                                     <div className="mt-6 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
-                                        <span className={`text-xs font-semibold ${service.iconColor} uppercase tracking-wider`}>
+                                        <span className="text-xs font-semibold text-brand-gold uppercase tracking-wider">
                                             Learn More
                                         </span>
                                         <motion.div
@@ -225,7 +225,7 @@ export function ServicesSection() {
                                                 ease: "easeInOut"
                                             }}
                                         >
-                                            <svg className={`w-4 h-4 ${service.iconColor}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <svg className="w-4 h-4 text-brand-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                                             </svg>
                                         </motion.div>
