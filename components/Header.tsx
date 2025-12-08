@@ -24,7 +24,7 @@ export function Header() {
         { name: 'Who are we?', href: '/about' },
         { name: 'Projects', href: '/projects' },
         { name: 'Careers', href: '/careers' },
-        { name: 'Contact', href: '#contact' },
+        { name: 'Contact', href: '/contact' },
     ];
 
     return (
