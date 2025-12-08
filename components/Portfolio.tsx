@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 import { ShardShape, AngularDividerTop } from './DesignElements';
@@ -138,20 +139,22 @@ export function Portfolio() {
                         </h2>
                     </motion.div>
 
-                    <motion.button
-                        initial={{ opacity: 0, x: 20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.6, delay: 0.2 }}
-                        className="hidden md:flex items-center gap-4 group"
-                    >
-                        <span className="text-sm font-bold uppercase tracking-widest text-white group-hover:text-brand-gold transition-colors">
-                            View All Works
-                        </span>
-                        <div className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-brand-gold group-hover:border-brand-gold transition-all duration-300">
-                            <ArrowUpRight className="w-5 h-5 text-white transition-colors" />
-                        </div>
-                    </motion.button>
+                    <Link href="/projects">
+                        <motion.div
+                            initial={{ opacity: 0, x: 20 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.6, delay: 0.2 }}
+                            className="hidden md:flex items-center gap-4 group cursor-pointer"
+                        >
+                            <span className="text-sm font-bold uppercase tracking-widest text-white group-hover:text-brand-gold transition-colors">
+                                View All Works
+                            </span>
+                            <div className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-brand-gold group-hover:border-brand-gold transition-all duration-300">
+                                <ArrowUpRight className="w-5 h-5 text-white transition-colors" />
+                            </div>
+                        </motion.div>
+                    </Link>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8">
@@ -227,9 +230,9 @@ export function Portfolio() {
                 </div>
 
                 <div className="mt-16 text-center md:hidden">
-                    <button className="inline-flex items-center gap-2 px-8 py-4 bg-brand-gold text-black text-sm font-bold uppercase tracking-widest hover:bg-brand-gold/90 transition-colors">
+                    <Link href="/projects" className="inline-flex items-center gap-2 px-8 py-4 bg-brand-gold text-black text-sm font-bold uppercase tracking-widest hover:bg-brand-gold/90 transition-colors">
                         View All Projects
-                    </button>
+                    </Link>
                 </div>
             </div>
         </section>
