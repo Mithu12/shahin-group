@@ -21,8 +21,7 @@ export function Header() {
     }, []);
 
     const navLinks = [
-        { name: 'Philosophy', href: '#philosophy' },
-        { name: 'Expertise', href: '#expertise' },
+        { name: 'Who are we?', href: '/about' },
         { name: 'Projects', href: '/projects' },
         { name: 'Contact', href: '#contact' },
     ];
