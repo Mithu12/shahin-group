@@ -53,9 +53,9 @@ export function Header() {
                             {link.name}
                         </Link>
                     ))}
-                    <button className="px-6 py-2 text-sm uppercase tracking-wider border transition-all duration-300 border-white text-white hover:bg-white hover:text-black">
+                    <Link href="/inquiries" className="px-6 py-2 text-sm uppercase tracking-wider border transition-all duration-300 border-white text-white hover:bg-white hover:text-black">
                         Inquire
-                    </button>
+                    </Link>
                 </nav>
 
                 {/* Mobile Menu Button */}
