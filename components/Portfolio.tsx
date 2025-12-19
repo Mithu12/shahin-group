@@ -3,42 +3,17 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 import { ShardShape, AngularDividerTop } from './DesignElements';
 
-const projects = [
-    {
-        id: 1,
-        title: "The Grand Marina",
-        category: "Luxury Residential",
-        image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80",
-        description: "A waterfront masterpiece redefining luxury living."
-    },
-    {
-        id: 2,
-        title: "Shahin Tower",
-        category: "Commercial HQ",
-        image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&q=80",
-        description: "The new icon of the city's financial district."
-    },
-    {
-        id: 3,
-        title: "Eco-City One",
-        category: "Sustainable Urban Planning",
-        image: "https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?auto=format&fit=crop&q=80",
-        description: "A self-sustaining community for the future."
-    },
-    {
-        id: 4,
-        title: "Global Media Center",
-        category: "Media & Tech",
-        image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80",
-        description: "State-of-the-art broadcasting and digital hub."
-    }
-];
+import { projects as allProjects } from '@/app/data/projects';
+
+const projects = allProjects.slice(0, 4);
 
 export function Portfolio() {
+    const router = useRouter();
     return (
         <section id="projects" className="relative py-24 md:py-40 bg-brand-navy overflow-hidden">
             {/* Angular Divider Top */}
@@ -174,7 +149,8 @@ export function Portfolio() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, margin: "-100px" }}
                                 transition={{ duration: 0.8, delay: index * 0.1 }}
-                                className={`group relative ${colSpan} ${height} overflow-hidden bg-brand-light`}
+                                className={`group relative ${colSpan} ${height} overflow-hidden bg-brand-light cursor-pointer`}
+                                onClick={() => router.push(`/projects/${project.id}`)}
                             >
                                 {/* Image Container */}
                                 <div className="absolute inset-0 w-full h-full overflow-hidden">
